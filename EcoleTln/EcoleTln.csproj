@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Classes.ClassesEcole\Contact.cs" />
+    <Compile Include="Classes.ClassesEcole\Ecole.cs" />
+    <Compile Include="Classes.ClassesEcole\Enseignant.cs" />
+    <Compile Include="Classes.ClassesEcole\Etudiant.cs" />
+    <Compile Include="Classes.ClassesEcole\EtudiantEchange.cs" />
+    <Compile Include="Classes.ClassesEcole\EtudiantRegulier.cs" />
+    <Compile Include="Classes.ClassesEcole\Personnel.cs" />
+    <Compile Include="EcoleTLN\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes.ClassesEcole\Secretaire.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
