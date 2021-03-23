@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Classes.ClassesEcole
 {
-    class EtudiantEchange
+    class EtudiantEchange : Etudiant
     {
+        private string universiteOrigine;
+
+        public EtudiantEchange(int matricule, string nom, int anneeArrivee, string section, string universiteOrigine) : base(matricule, nom, anneeArrivee,section)
+        {
+            this.universiteOrigine = universiteOrigine;
+        }
+
+        public string UniversiteOrigine { get => universiteOrigine; }
     }
 }

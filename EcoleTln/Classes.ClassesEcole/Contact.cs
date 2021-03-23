@@ -8,9 +8,9 @@ namespace Classes.ClassesEcole
 {
     class Contact
     {
-        private int matricule;
-        private string nom;
-        private int anneeArrivee;
+        protected int matricule;
+        protected string nom;
+        protected int anneeArrivee;
 
         
 

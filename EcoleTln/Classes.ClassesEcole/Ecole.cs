@@ -12,13 +12,20 @@ namespace Classes.ClassesEcole
         private int anneeCreation;
         private Dictionary<int ,Contact> contacts  = new Dictionary<int,Contact>();
 
-        public Ecole(string nom, int anneeCreation)
+        public Ecole(string nom, int anneeCreation, Dictionary<int, Contact> contacts)
         {
             this.nom = nom;
             this.anneeCreation = anneeCreation;
+            this.Contacts = contacts;
         }
 
+        public string AfficheTous()
+        {
+            
+        }
+        public double ancienneteMoyenne
         public string Nom { get => nom; }
         public int AnneeCreation { get => anneeCreation; }
+        internal Dictionary<int, Contact> Contacts { get => contacts;  private set => contacts = value; }
     }
 }
