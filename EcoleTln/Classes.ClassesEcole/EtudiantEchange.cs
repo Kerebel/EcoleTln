@@ -14,7 +14,10 @@ namespace Classes.ClassesEcole
         {
             this.universiteOrigine = universiteOrigine;
         }
-
+        public override string ToString()
+        {
+            return String.Format("\nEtudiant Echangé : {0} \n\tUniversité d'origine : {1}\n", base.ToString(), this.UniversiteOrigine);
+        }
         public string UniversiteOrigine { get => universiteOrigine; }
     }
 }

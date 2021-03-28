@@ -14,7 +14,10 @@ namespace Classes.ClassesEcole
         {
             this.noteMoyenne = noteMoyenne;
         }
-
+        public override string ToString()
+        {
+            return String.Format("\nEtudiant Régulier : {0} \n\tMoyenne : {1}\n", base.ToString(), this.NoteMoyenne);
+        }
         public double NoteMoyenne { get => noteMoyenne; }
     }
 }

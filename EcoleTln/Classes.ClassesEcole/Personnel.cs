@@ -17,7 +17,11 @@ namespace Classes.ClassesEcole
             this.nomLaboratoire = nomLaboratoire;
             this.salaire = salaire;
         }
-        protected string NomLaboratoire { get => nomLaboratoire; }
-        protected double Salaire { get => salaire;}
+        public override string ToString()
+        {
+            return base.ToString() + String.Format("\n\tLaboratoire : {0} \n\tSalaire : {1}", this.NomLaboratoire, this.Salaire);
+        }
+        public string NomLaboratoire { get => nomLaboratoire; }
+        public double Salaire { get => salaire;}
     }
 }

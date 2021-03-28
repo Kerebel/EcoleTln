@@ -14,7 +14,10 @@ namespace Classes.ClassesEcole
         {
             this.section = section;
         }
-
+        public override string ToString()
+        {
+            return String.Format("\nEnseignant : {0} \n\tSection : {1}\n", base.ToString(), this.Section);
+        }
         public string Section { get => section; set => section = value; }
     }
 }
